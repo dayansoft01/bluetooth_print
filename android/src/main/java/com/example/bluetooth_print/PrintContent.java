@@ -146,7 +146,7 @@ public class PrintContent {
                   }else if("image".equals(type)){
                         byte[] bytes = Base64.decode(content, Base64.DEFAULT);
                         Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-                        tsc.addBitmap(x, y, LabelCommand.BITMAP_MODE.OVERWRITE, 480 bitmap);
+                        tsc.addBitmap(x, y, LabelCommand.BITMAP_MODE.OVERWRITE, 480, bitmap);
                   }
             }
 
